@@ -1,0 +1,27 @@
+# Ignora variabili d'ambiente
+.env
+
+# Ignora file Python compilati
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignora virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Ignora configurazioni locali
+*.sqlite3
+instance/
+*.log
+
+# Ignora file di sistema
+.DS_Store
+Thumbs.db
+
+# Ignora file di editor
+.vscode/
+.idea/
