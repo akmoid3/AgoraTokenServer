@@ -1,5 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.RtcTokenBuilder2 import RtcTokenBuilder, Role_Publisher
 import os
 from dotenv import load_dotenv
@@ -14,8 +17,8 @@ load_dotenv()
 AGORA_APP_ID = os.getenv("AGORA_APP_ID")
 AGORA_APP_CERTIFICATE = os.getenv("AGORA_APP_CERTIFICATE")
 
-TOKEN_EXPIRATION_IN_SECONDS = 3600
-PRIVILEGE_EXPIRATION_IN_SECONDS = 3600
+TOKEN_EXPIRATION_IN_SECONDS = 86400
+PRIVILEGE_EXPIRATION_IN_SECONDS = 86400
 
 
 @app.route("/token/uid", methods=["GET"])

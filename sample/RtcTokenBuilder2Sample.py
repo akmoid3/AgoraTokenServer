@@ -11,12 +11,12 @@ from src.RtcTokenBuilder2 import *
 
 def main():
     # Need to set environment variable AGORA_APP_ID
-    app_id = "4703d12de1af47eb94294a750641a314"
+    app_id = "aa9b36dd3320409b808cd5463cd4ef39"
     # Need to set environment variable AGORA_APP_CERTIFICATE
-    app_certificate = "fe14c8552166435c9ea3a9b0693d1c78"
+    app_certificate = "17ca6ceab8aa419d86e2ff10658cb71f"
 
-    channel_name = "Unity_Channel"
-    uid = 0
+    channel_name = "prova1"
+    uid = 10
     account = "prova3"
     token_expiration_in_seconds = 3600
     privilege_expiration_in_seconds = 3600
