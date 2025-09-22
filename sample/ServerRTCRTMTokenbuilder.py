@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 
 # Allow CORS
-CORS(app, resources={r"/token/*": {"origins": "http://localhost:5173"}})
+CORS(app) 
 
 load_dotenv()
 
